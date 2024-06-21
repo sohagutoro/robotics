@@ -1,0 +1,76 @@
+left1 =
+ 
+[r11*cos(Theta_1) + r21*sin(Theta_1), r12*cos(Theta_1) + r22*sin(Theta_1), r13*cos(Theta_1) + r23*sin(Theta_1), p1*cos(Theta_1) + p2*sin(Theta_1)]
+[r21*cos(Theta_1) - r11*sin(Theta_1), r22*cos(Theta_1) - r12*sin(Theta_1), r23*cos(Theta_1) - r13*sin(Theta_1), p2*cos(Theta_1) - p1*sin(Theta_1)]
+[                                r31,                                 r32,                                 r33,                          p3 - l_1]
+[                                  0,                                   0,                                   0,                                 1]
+ 
+ 
+right1 =
+ 
+[                 cos(Theta_3)*cos(Theta_4)*cos(Theta_5) - sin(Theta_3)*sin(Theta_5),                - cos(Theta_5)*sin(Theta_3) - cos(Theta_3)*cos(Theta_4)*sin(Theta_5),                cos(Theta_3)*sin(Theta_4),                                           l_3*cos(Theta_3) + l_4*cos(Theta_3)*cos(Theta_4) - l_5*sin(Theta_3)*sin(Theta_5) + l_5*cos(Theta_3)*cos(Theta_4)*cos(Theta_5)]
+[                                                          cos(Theta_5)*sin(Theta_4),                                                          -sin(Theta_4)*sin(Theta_5),                            -cos(Theta_4),                                                                                                                        l_4*sin(Theta_4) + l_5*cos(Theta_5)*sin(Theta_4)]
+[cos(Theta_3)*sin(Theta_5) - cos(Theta_5)*(sin(Theta_4) - cos(Theta_4)*sin(Theta_3)), sin(Theta_5)*(sin(Theta_4) - cos(Theta_4)*sin(Theta_3)) + cos(Theta_3)*cos(Theta_5), cos(Theta_4) + sin(Theta_3)*sin(Theta_4), d_2 + l_3*sin(Theta_3) - l_4*sin(Theta_4) + l_4*cos(Theta_4)*sin(Theta_3) + l_5*cos(Theta_3)*sin(Theta_5) - l_5*cos(Theta_5)*(sin(Theta_4) - cos(Theta_4)*sin(Theta_3))]
+[                                                                                  0,                                                                                   0,                                        0,                                                                                                                                                                       1]
+ 
+ 
+left2 =
+ 
+[ r11,  r12,  r13,       p1]
+[ r31,  r32,  r33, p3 - d_2]
+[-r21, -r22, -r23,      -p2]
+[   0,    0,    0,        1]
+ 
+ 
+right2 =
+ 
+[cos(Theta_3)*cos(Theta_4)*cos(Theta_5) - sin(Theta_3)*sin(Theta_5), - cos(Theta_5)*sin(Theta_3) - cos(Theta_3)*cos(Theta_4)*sin(Theta_5), cos(Theta_3)*sin(Theta_4), l_3*cos(Theta_3) + l_4*cos(Theta_3)*cos(Theta_4) - l_5*sin(Theta_3)*sin(Theta_5) + l_5*cos(Theta_3)*cos(Theta_4)*cos(Theta_5)]
+[cos(Theta_3)*sin(Theta_5) + cos(Theta_4)*cos(Theta_5)*sin(Theta_3),   cos(Theta_3)*cos(Theta_5) - cos(Theta_4)*sin(Theta_3)*sin(Theta_5), sin(Theta_3)*sin(Theta_4), l_3*sin(Theta_3) + l_4*cos(Theta_4)*sin(Theta_3) + l_5*cos(Theta_3)*sin(Theta_5) + l_5*cos(Theta_4)*cos(Theta_5)*sin(Theta_3)]
+[                                        -cos(Theta_5)*sin(Theta_4),                                            sin(Theta_4)*sin(Theta_5),              cos(Theta_4),                                                                            - l_4*sin(Theta_4) - l_5*cos(Theta_5)*sin(Theta_4)]
+[                                                                 0,                                                                    0,                         0,                                                                                                                             1]
+ 
+ 
+left3 =
+ 
+[r11*cos(Theta_3) + r21*sin(Theta_3), r12*cos(Theta_3) + r22*sin(Theta_3), r13*cos(Theta_3) + r23*sin(Theta_3), p1*cos(Theta_3) - l_3 + p2*sin(Theta_3)]
+[                               -r31,                                -r32,                                -r33,                                     -p3]
+[r21*cos(Theta_3) - r11*sin(Theta_3), r22*cos(Theta_3) - r12*sin(Theta_3), r23*cos(Theta_3) - r13*sin(Theta_3),       p2*cos(Theta_3) - p1*sin(Theta_3)]
+[                                  0,                                   0,                                   0,                                       1]
+right3 =
+ 
+[cos(Theta_4)*cos(Theta_5), -cos(Theta_4)*sin(Theta_5),  sin(Theta_4), l_4*cos(Theta_4) + l_5*cos(Theta_4)*cos(Theta_5)]
+[cos(Theta_5)*sin(Theta_4), -sin(Theta_4)*sin(Theta_5), -cos(Theta_4), l_4*sin(Theta_4) + l_5*cos(Theta_5)*sin(Theta_4)]
+[             sin(Theta_5),               cos(Theta_5),             0,                                 l_5*sin(Theta_5)]
+[                        0,                          0,             0,                                                1]
+ 
+ 
+left4 =
+ 
+[r11*cos(Theta_4) + r21*sin(Theta_4), r12*cos(Theta_4) + r22*sin(Theta_4), r13*cos(Theta_4) + r23*sin(Theta_4), p1*cos(Theta_4) - l_4 + p2*sin(Theta_4)]
+[                                r31,                                 r32,                                 r33,                                      p3]
+[r11*sin(Theta_4) - r21*cos(Theta_4), r12*sin(Theta_4) - r22*cos(Theta_4), r13*sin(Theta_4) - r23*cos(Theta_4),       p1*sin(Theta_4) - p2*cos(Theta_4)]
+[                                  0,                                   0,                                   0,                                       1]
+ 
+ 
+right4 =
+ 
+[cos(Theta_5), -sin(Theta_5), 0, l_5*cos(Theta_5)]
+[sin(Theta_5),  cos(Theta_5), 0, l_5*sin(Theta_5)]
+[           0,             0, 1,                0]
+[           0,             0, 0,                1]
+ 
+ 
+left4 =
+ 
+[r11*cos(Theta_5) + r21*sin(Theta_5), r12*cos(Theta_5) + r22*sin(Theta_5), r13*cos(Theta_5) + r23*sin(Theta_5), p1*cos(Theta_5) - l_5 + p2*sin(Theta_5)]
+[r21*cos(Theta_5) - r11*sin(Theta_5), r22*cos(Theta_5) - r12*sin(Theta_5), r23*cos(Theta_5) - r13*sin(Theta_5),       p2*cos(Theta_5) - p1*sin(Theta_5)]
+[                                r31,                                 r32,                                 r33,                                      p3]
+[                                  0,                                   0,                                   0,                                       1]
+ 
+
+right4 =
+
+     1     0     0     0
+     0     1     0     0
+     0     0     1     0
+     0     0     0     1
